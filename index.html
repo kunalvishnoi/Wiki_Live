@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+    body{
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bowlby+One" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+  <style type="text/css">
+    #search {
+    height: 23px;
+    width: 360px;
+    border: 1px solid #092b40;
+    height: 50px;
+    padding-left: 20px;
+    margin: 0 auto;
+}
+#search[placeholder] {
+    font-size: 20px;
+}
+.heading {
+    margin: 0;
+    color: #fff !important;
+    font-family: 'Bowlby One', cursive;
+}
+i {
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.searchBox {
+    margin-top: 47px;
+}
+.shortHr {
+    width: 100px;
+    border-bottom: 2px solid #fff;
+}
+.jumbotron {
+    border-radius: 0px !important;
+    background-color: #092b40;
+}
+  </style>
+  <title></title>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 jumbotron text-center">
+        <h1 class="heading">Wikiraat</h1>
+        <p><i>Live search results from wikipedia</i></p>
+        <hr class="shortHr">
+        <div class="searchBox">
+          <input type="text" class="form-control" id="search" placeholder="Type unique" name="search">
+          <br>
+          <button class="btn btn-primary random">Article of the Day</button>
+        </div>
+      </div>
+      <div class="col-sm-8 col-sm-offset-2 searchResults">
+        <div id="update"></div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid embed-responsive embed-responsive-16by9">
+  <div class="row">
+    <iframe src="" frameborder="0" class="embed-responsive-item" width="1080" height="760"></iframe>
+</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
